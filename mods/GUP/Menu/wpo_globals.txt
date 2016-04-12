@@ -1,7 +1,0 @@
-{
-	"menu_id" : "menu_globals",
-	"parent_menu_id" : "gm_wpo_options",
-	"title" : "menu_globals",
-	"description" : "menu_globals_desc",
-	"items" : [{}]
-}
