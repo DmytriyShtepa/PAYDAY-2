@@ -1,0 +1,221 @@
+{
+	"menu_id" : "menu_globals_barrel_extensions",
+	"parent_menu_id" : "menu_globals",
+	"title" : "menu_globals_barrel_extensions",
+	"description" : "menu_globals_barrel_extensions_desc",
+	"items" : [
+		{
+			"type" : "multiple_choice",
+			"id" : "stubby_compensator",
+			"title" : "stubby_compensator",
+			"description" : "stubby_compensator_desc",
+			"callback" : "stubby_compensator",
+			"items" : [
+				"default",
+				"tank_compensator",
+				"fire_breather",
+				"competitors_compensator",
+				"funnel_of_fun",
+				"tactical_compensator",
+				"ported_compensator",
+				"shark_teeth",
+				"kings_crown",
+				"bayonet",
+				"hide"
+			],
+			"value" : "_stubby_compensator",
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "tank_compensator",
+			"title" : "tank_compensator",
+			"description" : "tank_compensator_desc",
+			"callback" : "tank_compensator",
+			"items" : [
+				"default",
+				"stubby_compensator",
+				"fire_breather",
+				"competitors_compensator",
+				"funnel_of_fun",
+				"tactical_compensator",
+				"ported_compensator",
+				"shark_teeth",
+				"kings_crown",
+				"bayonet",
+				"hide"
+			],
+			"value" : "_tank_compensator",
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "fire_breather",
+			"title" : "fire_breather",
+			"description" : "fire_breather_desc",
+			"callback" : "fire_breather",
+			"items" : [
+				"default",
+				"stubby_compensator",
+				"tank_compensator",
+				"competitors_compensator",
+				"funnel_of_fun",
+				"tactical_compensator",
+				"ported_compensator",
+				"shark_teeth",
+				"kings_crown",
+				"bayonet",
+				"hide"
+			],
+			"value" : "_fire_breather",
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "competitors_compensator",
+			"title" : "competitors_compensator",
+			"description" : "competitors_compensator_desc",
+			"callback" : "competitors_compensator",
+			"items" : [
+				"default",
+				"stubby_compensator",
+				"tank_compensator",
+				"fire_breather",
+				"funnel_of_fun",
+				"tactical_compensator",
+				"ported_compensator",
+				"shark_teeth",
+				"kings_crown",
+				"bayonet",
+				"hide"
+			],
+			"value" : "_competitors_compensator",
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "funnel_of_fun",
+			"title" : "funnel_of_fun",
+			"description" : "funnel_of_fun_desc",
+			"callback" : "funnel_of_fun",
+			"items" : [
+				"default",
+				"stubby_compensator",
+				"tank_compensator",
+				"fire_breather",
+				"competitors_compensator",
+				"tactical_compensator",
+				"ported_compensator",
+				"shark_teeth",
+				"kings_crown",
+				"bayonet",
+				"hide"
+			],
+			"value" : "_funnel_of_fun",
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "tactical_compensator",
+			"title" : "tactical_compensator",
+			"description" : "tactical_compensator_desc",
+			"callback" : "tactical_compensator",
+			"items" : [
+				"default",
+				"stubby_compensator",
+				"tank_compensator",
+				"fire_breather",
+				"competitors_compensator",
+				"funnel_of_fun",
+				"ported_compensator",
+				"shark_teeth",
+				"kings_crown",
+				"bayonet",
+				"hide"
+			],
+			"value" : "_tactical_compensator",
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "ported_compensator",
+			"title" : "ported_compensator",
+			"description" : "ported_compensator_desc",
+			"callback" : "ported_compensator",
+			"items" : [
+				"default",
+				"stubby_compensator",
+				"tank_compensator",
+				"fire_breather",
+				"competitors_compensator",
+				"funnel_of_fun",
+				"tactical_compensator",
+				"shark_teeth",
+				"kings_crown",
+				"bayonet",
+				"hide"
+			],
+			"value" : "_ported_compensator",
+			"default_value" : 1
+		},
+		{
+			"type" : "divider",
+			"size" : 8
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "shark_teeth",
+			"title" : "shark_teeth",
+			"description" : "shark_teeth_desc",
+			"callback" : "shark_teeth",
+			"items" : [
+				"default",
+				"kings_crown",
+				"stubby_compensator",
+				"tank_compensator",
+				"fire_breather",
+				"funnel_of_fun",
+				"ported_compensator",
+				"hide"
+			],
+			"value" : "_shark_teeth",
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "kings_crown",
+			"title" : "kings_crown",
+			"description" : "kings_crown_desc",
+			"callback" : "kings_crown",
+			"items" : [
+				"default",
+				"shark_teeth",
+				"stubby_compensator",
+				"tank_compensator",
+				"fire_breather",
+				"funnel_of_fun",
+				"ported_compensator",
+				"hide"
+			],
+			"value" : "_kings_crown",
+			"default_value" : 1
+		},
+		{
+			"type" : "divider",
+			"size" : 8
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "flash_hider",
+			"title" : "flash_hider",
+			"description" : "flash_hider_desc",
+			"callback" : "flash_hider",
+			"items" : [
+				"default",
+				"hide"
+			],
+			"value" : "_flash_hider",
+			"default_value" : 1
+		}
+	]
+}

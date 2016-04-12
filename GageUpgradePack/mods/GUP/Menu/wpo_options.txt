@@ -1,0 +1,36 @@
+{
+	"menu_id" : "gm_wpo_options",
+	"parent_menu_id" : "lua_mod_options_menu",
+	"title" : "gm_wpo_options",
+	"description" : "gm_wpo_options_desc",
+	"items" : [
+		{
+			"type" : "button",
+			"id" : "gm_wpo_options_apply",
+			"title" : "gm_wpo_options_apply",
+			"description" : "gm_wpo_options_apply_desc",
+			"callback" : "callback_options_apply"
+		},
+		{
+			"type" : "divider",
+			"size" : 16
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "gm_language_select",
+			"title" : "gm_language_select",
+			"description" : "gm_language_select_desc",
+			"callback" : "choose_language",
+			"items" : [
+				"en_loc",
+				"ru_loc"
+			],
+			"value" : "Language",
+			"default_value" : 1
+		},
+		{
+			"type" : "divider",
+			"size" : 16
+		}		
+	]
+}

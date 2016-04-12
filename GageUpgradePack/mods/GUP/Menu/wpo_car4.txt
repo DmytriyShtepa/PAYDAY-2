@@ -1,0 +1,27 @@
+{
+	"menu_id" : "menu_car4",
+	"parent_menu_id" : "gm_wpo_options",
+	"title" : "menu_car4",
+	"description" : "menu_car4_desc",
+	"items" : [
+		{
+			"type" : "multiple_choice",
+			"id" : "car4_reload",
+			"title" : "reload",
+			"description" : "reload_desc",
+			"callback" : "animation_car4",
+			"items" : [
+				"default",
+				"colt_reload",
+				"m16_reload",
+				"olympic_reload"
+			],
+			"value" : "animation_car_4",
+			"default_value" : 1
+		},
+		{
+			"type" : "divider",
+			"size" : 16
+		}
+	]
+}

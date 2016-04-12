@@ -1,0 +1,123 @@
+{
+	"menu_id" : "menu_car4_mags",
+	"parent_menu_id" : "menu_car4",
+	"title" : "menu_mags",
+	"description" : "menu_mags_desc",
+	"items" : [
+		{
+			"type" : "multiple_choice",
+			"id" : "car4_std_m",
+			"title" : "standart_mag",
+			"description" : "standart_mag_desc",
+			"callback" : "std_m_car4",
+			"value" : "_std_m_car4",
+            "items" : [
+				"default",
+				"drum_mag",
+				"pmag",
+				"straight_mag",
+				"quad_mag",
+				"l85a2_mag",
+				"l5_mag",
+				"aug_mag"
+			],			
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "car4_pmag",
+			"title" : "pmag",
+			"description" : "pmag_desc",
+			"callback" : "pmag_car4",
+			"value" : "_pmag_car4",
+            "items" : [
+				"default",
+				"standart_mag",
+				"drum_mag",
+				"straight_mag",
+				"quad_mag",
+				"l85a2_mag",
+				"l5_mag",
+				"aug_mag"
+			],			
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "car4_straight_m",
+			"title" : "straight_mag",
+			"description" : "straight_mag_desc",
+			"callback" : "straight_m_car4",
+			"value" : "_straight_m_car4",
+            "items" : [
+				"default",
+				"standart_mag",
+				"drum_mag",
+				"pmag",
+				"quad_mag",
+				"l85a2_mag",
+				"l5_mag",
+				"aug_mag"
+			],			
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "car4_quad_m",
+			"title" : "quad_mag",
+			"description" : "quad_mag_desc",
+			"callback" : "quad_m_car4",
+			"value" : "_quad_m_car4",
+            "items" : [
+				"default",
+				"standart_mag",
+				"drum_mag",
+				"pmag",
+				"straight_mag",
+				"l85a2_mag",
+				"l5_mag",
+				"aug_mag"
+			],			
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "car4_l85a2_m",
+			"title" : "l85a2_mag",
+			"description" : "l85a2_mag_desc",
+			"callback" : "l85a2_m_car4",
+			"value" : "_l85a2_m_car4",
+            "items" : [
+				"default",
+				"standart_mag",
+				"drum_mag",
+				"pmag",
+				"straight_mag",
+				"quad_mag",
+				"l5_mag",
+				"aug_mag"
+			],			
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "car4_l5_m",
+			"title" : "l5_mag",
+			"description" : "l5_mag_desc",
+			"callback" : "l5_m_car4",
+			"value" : "_l5_m_car4",
+            "items" : [
+				"default",
+				"standart_mag",
+				"drum_mag",
+				"pmag",
+				"straight_mag",
+				"quad_mag",
+				"l85a2_mag",
+				"aug_mag"
+			],
+			
+			"default_value" : 1
+		}
+	]
+}

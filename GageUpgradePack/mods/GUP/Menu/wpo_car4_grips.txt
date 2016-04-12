@@ -1,0 +1,89 @@
+{
+	"menu_id" : "menu_car4_grips",
+	"parent_menu_id" : "menu_car4",
+	"title" : "menu_grips",
+	"description" : "menu_grips_desc",
+	"items" : [
+		{
+			"type" : "multiple_choice",
+			"id" : "standard_grip_car4",
+			"title" : "standard_grip",
+			"description" : "standard_grip_desc",
+			"callback" : "standard_grip_car4",
+			"value" : "_standard_grip_car4",
+            "items" : [
+				"default",
+				"ergo_grip",
+				"pro_grip",
+				"rubber_grip",
+				"straight_grip"
+			],			
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "ergo_grip_car4",
+			"title" : "ergo_grip",
+			"description" : "ergo_grip_desc",
+			"callback" : "ergo_grip_car4",
+			"value" : "_ergo_grip_car4",
+            "items" : [
+				"default",
+				"standard_grip",
+				"pro_grip",
+				"rubber_grip",
+				"straight_grip"
+			],
+			
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "pro_grip_car4",
+			"title" : "pro_grip",
+			"description" : "pro_grip_desc",
+			"callback" : "pro_grip_car4",
+			"value" : "_pro_grip_car4",
+            "items" : [
+				"default",
+				"standard_grip",
+				"ergo_grip",
+				"rubber_grip",
+				"straight_grip"
+			],			
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "rubber_grip_car4",
+			"title" : "rubber_grip",
+			"description" : "rubber_grip_desc",
+			"callback" : "rubber_grip_car4",
+            "value" : "_rubber_grip_car4",
+			"items" : [
+				"default",
+				"standard_grip",
+				"ergo_grip",
+				"pro_grip",
+				"straight_grip"
+			],			
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "straight_grip_car4",
+			"title" : "straight_grip",
+			"description" : "straight_grip_desc",
+			"callback" : "straight_grip_car4",
+            "value" : "_straight_grip_car4",
+			"items" : [
+				"default",
+				"standard_grip",
+				"ergo_grip",
+				"pro_grip",
+				"rubber_grip"
+			],			
+			"default_value" : 1
+		}
+	]
+}
