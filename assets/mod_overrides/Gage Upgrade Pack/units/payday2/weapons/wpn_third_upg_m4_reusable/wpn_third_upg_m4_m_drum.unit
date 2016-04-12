@@ -1,0 +1,6 @@
+<unit type="wpn" slot="1" >
+    <object file="units/payday2/weapons/wpn_third_upg_m4_reusable/wpn_third_upg_m4_m_drum" />
+    <extensions>
+        <extension name="unit_data" class="ScriptUnitData" />
+    </extensions>
+</unit>

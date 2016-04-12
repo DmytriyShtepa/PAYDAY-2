@@ -1,0 +1,21 @@
+{
+	"gm_wpo_options" : "Weapon Parts Overhaul Options",
+	"gm_wpo_options_desc" : "Настройки для мода",
+	
+	"bm_menu_second_sight" : "Second Sight",
+    "bm_wp_upg_o_docter_special" : "Special Surgeon Sight",
+    "bm_wp_upg_o_eotech_xps_special" : "Special Holographic Sight",  
+    "bm_wp_lmg_liongadget1" : "LionGadget bipod",
+	
+	"menu_car4" : "CAR-4 Customization",
+	"menu_car4_desc" : "Change the looks of CAR-4",
+	
+	"car4_sight" : "CAR-4 Ironsight",
+	"default_sight_car4" : "Стандратный",
+	"amr16_sight_car4" : "AMR-16",
+	
+	"gm_language_select" : "Язык",
+	"gm_language_select_desc" : "Выбор языка",
+	"en_loc" : "English",
+	"ru_loc" : "Русский"
+}

@@ -1,0 +1,136 @@
+{
+	"menu_id" : "menu_amr16_receivers",
+	"parent_menu_id" : "menu_amr16",
+	"title" : "menu_receivers",
+	"description" : "menu_receivers_desc",
+	"items" : [
+		{
+			"type" : "multiple_choice",
+			"id" : "amr16_round_receiver",
+			"title" : "round_receiver",
+			"description" : "round_receiver_desc",
+			"callback" : "round_receiver_amr16",
+			"items" : [
+				"default",
+				"edge_receiver",
+				"ballos_receiver",
+				"core_receiver"
+			],
+			"value" : "_round_receiver_amr16",
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "amr16_round_dh",
+			"title" : "round_dh",
+			"description" : "round_dh_desc",
+			"callback" : "round_dh_amr16",
+			"items" : [
+				"default",
+				"ballos_dh",
+				"core_dh"
+			],
+			"value" : "_round_dh_amr16",
+			"default_value" : 1
+		},
+		{
+			"type" : "divider",
+			"size" : 8
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "amr16_edge_receiver",
+			"title" : "edge_receiver",
+			"description" : "edge_receiver_desc",
+			"callback" : "edge_receiver_amr16",
+			"items" : [
+				"default",
+				"round_receiver",
+				"ballos_receiver",
+				"core_receiver"
+			],
+			"value" : "_edge_receiver_amr16",
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "amr16_edge_dh",
+			"title" : "edge_dh",
+			"description" : "edge_dh_desc",
+			"callback" : "edge_dh_amr16",
+			"items" : [
+				"default",
+				"ballos_dh",
+				"core_dh"
+			],
+			"value" : "_edge_dh_amr16",
+			"default_value" : 1
+		},
+		{
+			"type" : "divider",
+			"size" : 8
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "amr16_ballos_receiver",
+			"title" : "ballos_receiver",
+			"description" : "ballos_receiver_desc",
+			"callback" : "ballos_receiver_amr16",
+			"items" : [
+				"default",
+				"round_receiver",
+				"edge_receiver",
+				"core_receiver"
+			],
+			"value" : "_ballos_receiver_amr16",
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "amr16_ballos_dh",
+			"title" : "ballos_dh",
+			"description" : "ballos_dh_desc",
+			"callback" : "ballos_dh_amr16",
+			"items" : [
+				"default",
+				"round_dh",
+				"core_dh"
+			],
+			"value" : "_ballos_dh_amr16",
+			"default_value" : 1
+		},
+		{
+			"type" : "divider",
+			"size" : 8
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "amr16_core_receiver",
+			"title" : "core_receiver",
+			"description" : "core_receiver_desc",
+			"callback" : "core_receiver_amr16",
+			"items" : [
+				"default",
+				"round_receiver",
+				"edge_receiver",
+				"ballos_receiver"
+			],
+			"value" : "_core_receiver_amr16",
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "amr16_core_dh",
+			"title" : "core_dh",
+			"description" : "core_dh_desc",
+			"callback" : "core_dh_amr16",
+			"items" : [
+				"default",
+				"round_dh",
+				"ballos_dh"
+			],
+			"value" : "_core_dh_amr16",
+			"default_value" : 1
+		}
+	]
+}

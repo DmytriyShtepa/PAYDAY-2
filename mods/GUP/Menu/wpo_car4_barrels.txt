@@ -1,0 +1,148 @@
+{
+	"menu_id" : "menu_car4_barrels",
+	"parent_menu_id" : "menu_car4",
+	"title" : "menu_barrels",
+	"description" : "menu_barrels_desc",
+	"items" : [
+		{
+			"type" : "multiple_choice",
+			"id" : "car4_medium_barrel",
+			"title" : "medium_barrel",
+			"description" : "medium_barrel_desc",
+			"callback" : "medium_barrel_car4",
+			"value" : "_medium_barrel_car4",
+            "items" : [
+				"default",
+				"short_barrel",
+				"long_barrel",
+				"dmr_barrel",
+				"shortest_dmr_barrel",
+				"short_dmr_barrel",
+				"long_dmr_barrel"
+			],			
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "car4_short_barrel",
+			"title" : "short_barrel",
+			"description" : "short_barrel_desc",
+			"callback" : "short_barrel_car4",
+			"value" : "_short_barrel_car4",
+            "items" : [
+				"default",
+				"medium_barrel",
+				"long_barrel",
+				"dmr_barrel",
+				"shortest_dmr_barrel",
+				"short_dmr_barrel",
+				"long_dmr_barrel"
+			],
+			
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "car4_long_barrel",
+			"title" : "long_barrel",
+			"description" : "long_barrel_desc",
+			"callback" : "long_barrel_car4",
+			"value" : "_long_barrel_car4",
+            "items" : [
+				"default",
+				"medium_barrel",
+				"short_barrel",
+				"dmr_barrel",
+				"shortest_dmr_barrel",
+				"short_dmr_barrel",
+				"long_dmr_barrel"
+			],			
+			"default_value" : 1
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "car4_dmr_barrel",
+			"title" : "dmr_barrel",
+			"description" : "dmr_barrel_desc",
+			"callback" : "dmr_barrel_car4",
+			"value" : "_dmr_barrel_car4",
+            "items" : [
+				"default",
+				"default_shortest",
+				"default_short",
+				"default_long",
+				"medium_barrel",
+				"short_barrel",
+				"long_barrel"
+			],
+			
+			"default_value" : 1
+		},
+		{
+			"type" : "divider",
+			"size" : 8
+		},
+		{
+			"type" : "toggle",
+			"id" : "car4_big_suppressor_replace",
+			"title" : "big_suppressor_replace",
+			"description" : "big_suppressor_replace_desc",
+			"callback" : "big_suppressor_replace_car4",
+			"value" : "_big_suppressor_replace_car4",
+			"default_value" : false
+		},
+		{
+			"type" : "toggle",
+			"id" : "car4_use_thin_big",
+			"title" : "use_thin_big",
+			"description" : "use_thin_big_desc",
+			"callback" : "use_thin_big_car4",
+			"value" : "_use_thin_big_car4",
+			"default_value" : false
+		},
+		{
+			"type" : "divider",
+			"size" : 8
+		},
+		{
+			"type" : "toggle",
+			"id" : "car4_medium_suppressor_replace",
+			"title" : "medium_suppressor_replace",
+			"description" : "medium_suppressor_replace_desc",
+			"callback" : "medium_suppressor_replace_car4",
+			"value" : "_medium_suppressor_replace_car4",
+			"default_value" : false
+		},
+		{
+			"type" : "toggle",
+			"id" : "car4_use_thin_medium",
+			"title" : "use_thin_medium",
+			"description" : "use_thin_medium_desc",
+			"callback" : "use_thin_medium_car4",
+			"value" : "_use_thin_medium_car4",
+			"default_value" : false
+		},
+		{
+			"type" : "divider",
+			"size" : 8
+		},
+		{
+			"type" : "toggle",
+			"id" : "car4_low_profile_suppressor_replace",
+			"title" : "low_profile_suppressor_replace",
+			"description" : "low_profile_suppressor_replace_desc",
+			"callback" : "low_profile_suppressor_replace_car4",
+			"value" : "_low_profile_suppressor_replace_car4",
+			"default_value" : false
+		},
+		{
+			"type" : "toggle",
+			"id" : "car4_use_thin_low_profile",
+			"title" : "use_thin_low",
+			"description" : "use_thin_low_desc",
+			"callback" : "use_thin_low_profile_car4",
+			"value" : "_use_thin_low_profile_car4",
+			"default_value" : false
+		}
+	]
+}
