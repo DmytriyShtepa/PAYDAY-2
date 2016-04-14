@@ -177,22 +177,25 @@ function WeaponFactoryTweakData:_init_gage_upgrade()
 	
 	self.parts.L85A2_unit_bp = {
 		type = "L85A2_bp",
-		name_id = "bm_unit_L85A2",
 		unit = "units/pd2_dlc_clover/weapons/wpn_fps_ass_l85a2/wpn_fps_ass_l85a2",
 		third_unit = "units/pd2_dlc_clover/weapons/wpn_fps_ass_l85a2/wpn_fps_ass_l85a2",
 		a_obj = "a_s",
 		stats = {value = 1},
         internal_part = true,
-		adds = { "m249_unit" }
+		adds = { "m249_unit" },
+		override = {
+			m249_unit = {
+				a_obj = "a_m",
+				parent = "L85A2_bp"
+			}
+		}
 	}
 	
 	self.parts.m249_unit = {
 		type = "m249",
-		name_id = "bm_unit_m249",
 		unit = "units/pd2_dlc_gage_lmg/weapons/wpn_fps_lmg_m249/wpn_fps_lmg_m249",
 		third_unit = "units/pd2_dlc_gage_lmg/weapons/wpn_fps_lmg_m249/wpn_fps_lmg_m249",
-		a_obj = "a_m",
-		parent = "L85A2_bp",
+		a_obj = "a_body",
 		stats = {value = 1},
         internal_part = true
 	}
@@ -324,5 +327,43 @@ function WeaponFactoryTweakData:_init_gage_upgrade()
         internal_part = true
     }
 	
+	self.parts.ak74_unit = {
+		type = "ak74",
+		stats = {value = 1},
+		unit = "units/payday2/weapons/wpn_fps_ass_74/wpn_fps_ass_74",
+		third_unit = "units/payday2/weapons/wpn_fps_ass_74/wpn_fps_ass_74",
+		a_obj = "a_body",
+        internal_part = true
+	}
 	
+	self.parts.akm_unit = {
+		type = "akm",
+		stats = {value = 1},
+		unit = "units/payday2/weapons/wpn_fps_ass_akm/wpn_fps_ass_akm",
+		third_unit = "units/payday2/weapons/wpn_fps_ass_akm/wpn_fps_ass_akm",
+		a_obj = "a_body",
+        internal_part = true
+	}	
+	
+	self.parts.mp9_unit = {
+		type = "mp9",
+		stats = {value = 1},
+		unit = "units/payday2/weapons/wpn_fps_smg_mp9/wpn_fps_smg_mp9",
+		third_unit = "units/payday2/weapons/wpn_fps_smg_mp9/wpn_fps_smg_mp9",
+		a_obj = "a_body",
+        internal_part = true
+	}
+	
+	self.parts.wpn_fps_upg_o_rpk_scopemount = {
+		type = "scopemount",
+		name_id = "bm_wp_upg_o_ak_scopemount",
+		a_obj = "a_g",
+		unit = "units/pd2_dlc_akm4_modpack/weapons/wpn_fps_upg_o_ak_scopemount/wpn_fps_upg_o_ak_scopemount",
+		third_unit = "units/pd2_dlc_akm4_modpack/weapons/wpn_third_upg_o_ak_scopemount/wpn_third_upg_o_ak_scopemount",
+		stats = { value = 1 },
+		texture_bundle_folder = "dlc_akm4",
+		forbids = {
+			"wpn_fps_ak_extra_ris"
+		}		
+	}		
 end

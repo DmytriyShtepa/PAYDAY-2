@@ -2719,7 +2719,7 @@ tweak_data.weapon.factory.parts.wpn_fps_lmg_hk21_fg_short.override = {
 		}
 	},
 	wpn_fps_upg_fl_ass_peq15 = {
-		adds = { "judge_unit", "wpn_fps_addon_ris" },
+		adds = { "judge_unit", "wpn_fps_addon_ris", "wpn_fps_upg_fl_ass_peq15_flashlight" },
 		parent = "judge",
 		override = {
 			judge_unit = {
@@ -2776,7 +2776,7 @@ tweak_data.weapon.factory.parts.wpn_fps_lmg_hk21_fg_short.override = {
 		}
 	},
 	wpn_fps_upg_fl_ass_utg = {
-		adds = { "judge_unit", "wpn_fps_addon_ris" },
+		adds = { "judge_unit", "wpn_fps_addon_ris" , "wpn_fps_upg_fl_ass_peq15_flashlight"},
 		parent = "judge",
 		override = {
 			judge_unit = {
@@ -2811,7 +2811,7 @@ tweak_data.weapon.factory.parts.wpn_fps_lmg_hk21_fg_long.override = {
 		}
 	},
 	wpn_fps_upg_fl_ass_peq15 = {
-		adds = { "g3_unit", "wpn_fps_addon_ris" },
+		adds = { "g3_unit", "wpn_fps_addon_ris", "wpn_fps_upg_fl_ass_peq15_flashlight" },
 		parent = "g3",
 		override = {
 			g3_unit = {
@@ -2847,7 +2847,7 @@ tweak_data.weapon.factory.parts.wpn_fps_lmg_hk21_fg_long.override = {
 		}
 	},
 	wpn_fps_upg_fl_ass_utg = {
-		adds = { "g3_unit", "wpn_fps_addon_ris" },
+		adds = { "g3_unit", "wpn_fps_addon_ris", "wpn_fps_upg_fl_ass_peq15_flashlight"},
 		parent = "g3",
 		override = {
 			g3_unit = {
@@ -2859,114 +2859,191 @@ tweak_data.weapon.factory.parts.wpn_fps_lmg_hk21_fg_long.override = {
 		}
 	}		
 }
---[[
+--	M240 Animation Fix
 tweak_data.weapon.factory.parts.wpn_fps_lmg_par_upper_reciever.override = {
 	wpn_fps_upg_o_rx01 = {
-		adds = {"g18c_unit"},
+		adds = {"mp9_unit", "wpn_fps_shot_r870_ris_special"},
 		override = {
-			g18c_unit = { a_obj = "a_reload", parent = "upper_reciever"  }
+			mp9_unit = { a_obj = "a_reload", parent = "upper_reciever"  },
+			wpn_fps_shot_r870_ris_special = { a_obj = "a_s", parent = "mp9" }
 		},
-		parent = "g18c",
-		a_obj = "a_g"
+		parent = "mp9",
+		a_obj = "a_s",
+		stance_mod = {
+			wpn_fps_lmg_par = {
+				translation = Vector3(-0.04,-2,-5.025)
+			}
+		}
 	},
 	wpn_fps_upg_o_specter = {
-		adds = {"g18c_unit"},
+		adds = {"mp9_unit", "wpn_fps_shot_r870_ris_special"},
 		override = {
-			g18c_unit = { a_obj = "a_reload", parent = "upper_reciever"  }
+			mp9_unit = { a_obj = "a_reload", parent = "upper_reciever"  },
+			wpn_fps_shot_r870_ris_special = { a_obj = "a_s", parent = "mp9" }
 		},
-		parent = "g18c",
-		a_obj = "a_g"
+		parent = "mp9",
+		a_obj = "a_s",
+		stance_mod = {
+			wpn_fps_lmg_par = {
+				translation = Vector3(-0.04,-2,-5.025)
+			}
+		}
 	},
 	wpn_fps_upg_o_aimpoint = {
-		adds = {"g18c_unit"},
+		adds = {"mp9_unit", "wpn_fps_shot_r870_ris_special"},
 		override = {
-			g18c_unit = { a_obj = "a_reload", parent = "upper_reciever"  }
+			mp9_unit = { a_obj = "a_reload", parent = "upper_reciever"  },
+			wpn_fps_shot_r870_ris_special = { a_obj = "a_s", parent = "mp9" }
 		},
-		parent = "g18c",
-		a_obj = "a_g"
+		parent = "mp9",
+		a_obj = "a_s",
+		stance_mod = {
+			wpn_fps_lmg_par = {
+				translation = Vector3(-0.04,-2,-5.025)
+			}
+		}
 	},
 	wpn_fps_upg_o_aimpoint_2 = {
-		adds = {"g18c_unit"},
+		adds = {"mp9_unit", "wpn_fps_shot_r870_ris_special"},
 		override = {
-			g18c_unit = { a_obj = "a_reload", parent = "upper_reciever"  }
+			mp9_unit = { a_obj = "a_reload", parent = "upper_reciever"  },
+			wpn_fps_shot_r870_ris_special = { a_obj = "a_s", parent = "mp9" }
 		},
-		parent = "g18c",
-		a_obj = "a_g"
+		parent = "mp9",
+		a_obj = "a_s",
+		stance_mod = {
+			wpn_fps_lmg_par = {
+				translation = Vector3(-0.04,-2,-5.025)
+			}
+		}
 	},
 	wpn_fps_upg_o_docter = {
-		adds = {"g18c_unit"},
+		adds = {"mp9_unit", "wpn_fps_shot_r870_ris_special"},
 		override = {
-			g18c_unit = { a_obj = "a_reload", parent = "upper_reciever"  }
+			mp9_unit = { a_obj = "a_reload", parent = "upper_reciever"  },
+			wpn_fps_shot_r870_ris_special = { a_obj = "a_s", parent = "mp9" }
 		},
-		parent = "g18c",
-		a_obj = "a_g"
+		parent = "mp9",
+		a_obj = "a_s",
+		stance_mod = {
+			wpn_fps_lmg_par = {
+				translation = Vector3(-0.04,-2,-5.025)
+			}
+		}
 	},
 	wpn_fps_upg_o_eotech = {
-		adds = {"g18c_unit"},
+		adds = {"mp9_unit", "wpn_fps_shot_r870_ris_special"},
 		override = {
-			g18c_unit = { a_obj = "a_reload", parent = "upper_reciever"  }
+			mp9_unit = { a_obj = "a_reload", parent = "upper_reciever"  },
+			wpn_fps_shot_r870_ris_special = { a_obj = "a_s", parent = "mp9" }
 		},
-		parent = "g18c",
-		a_obj = "a_g"
+		parent = "mp9",
+		a_obj = "a_s",
+		stance_mod = {
+			wpn_fps_lmg_par = {
+				translation = Vector3(-0.04,-2,-5.025)
+			}
+		}
 	},
 	wpn_fps_upg_o_t1micro = {
-		adds = {"g18c_unit"},
+		adds = {"mp9_unit", "wpn_fps_shot_r870_ris_special"},
 		override = {
-			g18c_unit = { a_obj = "a_reload", parent = "upper_reciever"  }
+			mp9_unit = { a_obj = "a_reload", parent = "upper_reciever"  },
+			wpn_fps_shot_r870_ris_special = { a_obj = "a_s", parent = "mp9" }
 		},
-		parent = "g18c",
-		a_obj = "a_g"
+		parent = "mp9",
+		a_obj = "a_s",
+		stance_mod = {
+			wpn_fps_lmg_par = {
+				translation = Vector3(-0.04,-2,-5.025)
+			}
+		}
 	},
 	wpn_fps_upg_o_cmore = {
-		adds = {"g18c_unit"},
+		adds = {"mp9_unit", "wpn_fps_shot_r870_ris_special"},
 		override = {
-			g18c_unit = { a_obj = "a_reload", parent = "upper_reciever"  }
+			mp9_unit = { a_obj = "a_reload", parent = "upper_reciever"  },
+			wpn_fps_shot_r870_ris_special = { a_obj = "a_s", parent = "mp9" }
 		},
-		parent = "g18c",
-		a_obj = "a_g"
+		parent = "mp9",
+		a_obj = "a_s",
+		stance_mod = {
+			wpn_fps_lmg_par = {
+				translation = Vector3(-0.04,-2,-5.025)
+			}
+		}
 	},
 	wpn_fps_upg_o_acog = {
-		adds = {"g18c_unit"},
+		adds = {"mp9_unit", "wpn_fps_shot_r870_ris_special"},
 		override = {
-			g18c_unit = { a_obj = "a_reload", parent = "upper_reciever"  }
+			mp9_unit = { a_obj = "a_reload", parent = "upper_reciever"  },
+			wpn_fps_shot_r870_ris_special = { a_obj = "a_s", parent = "mp9" }
 		},
-		parent = "g18c",
-		a_obj = "a_g"
+		parent = "mp9",
+		a_obj = "a_s",
+		stance_mod = {
+			wpn_fps_lmg_par = {
+				translation = Vector3(-0.04,-2,-5.025)
+			}
+		}
 	},
 	wpn_fps_upg_o_cs = {
-		adds = {"g18c_unit"},
+		adds = {"mp9_unit", "wpn_fps_shot_r870_ris_special"},
 		override = {
-			g18c_unit = { a_obj = "a_reload", parent = "upper_reciever"  }
+			mp9_unit = { a_obj = "a_reload", parent = "upper_reciever"  },
+			wpn_fps_shot_r870_ris_special = { a_obj = "a_s", parent = "mp9" }
 		},
-		parent = "g18c",
-		a_obj = "a_g"
+		parent = "mp9",
+		a_obj = "a_s",
+		stance_mod = {
+			wpn_fps_lmg_par = {
+				translation = Vector3(-0.04,-2,-5.025)
+			}
+		}
 	},
 	wpn_fps_upg_o_eotech_xps = {
-		adds = {"g18c_unit"},
+		adds = {"mp9_unit", "wpn_fps_shot_r870_ris_special"},
 		override = {
-			g18c_unit = { a_obj = "a_reload", parent = "upper_reciever"  }
+			mp9_unit = { a_obj = "a_reload", parent = "upper_reciever"  },
+			wpn_fps_shot_r870_ris_special = { a_obj = "a_s", parent = "mp9" }
 		},
-		parent = "g18c",
-		a_obj = "a_g"
+		parent = "mp9",
+		a_obj = "a_s",
+		stance_mod = {
+			wpn_fps_lmg_par = {
+				translation = Vector3(-0.04,-2,-5.025)
+			}
+		}
 	},
 	wpn_fps_upg_o_reflex = {
-		adds = {"g18c_unit"},
+		adds = {"mp9_unit", "wpn_fps_shot_r870_ris_special"},
 		override = {
-			g18c_unit = { a_obj = "a_reload", parent = "upper_reciever"  }
+			mp9_unit = { a_obj = "a_reload", parent = "upper_reciever"  },
+			wpn_fps_shot_r870_ris_special = { a_obj = "a_s", parent = "mp9" }
 		},
-		parent = "g18c",
-		a_obj = "a_g"
+		parent = "mp9",
+		a_obj = "a_s",
+		stance_mod = {
+			wpn_fps_lmg_par = {
+				translation = Vector3(-0.04,-2,-5.025)
+			}
+		}
 	},
 	wpn_fps_upg_o_rx30 = {
-		adds = {"g18c_unit"},
+		adds = {"mp9_unit", "wpn_fps_shot_r870_ris_special"},
 		override = {
-			g18c_unit = { a_obj = "a_reload", parent = "upper_reciever"  }
+			mp9_unit = { a_obj = "a_reload", parent = "upper_reciever"  },
+			wpn_fps_shot_r870_ris_special = { a_obj = "a_s", parent = "mp9" }
 		},
-		parent = "g18c",
-		a_obj = "a_g"
+		parent = "mp9",
+		a_obj = "a_s",
+		stance_mod = {
+			wpn_fps_lmg_par = {
+				translation = Vector3(-0.04,-2,-5.025)
+			}
+		}
 	}
 }
-]]
 
 --	M249 Animation Fix
 tweak_data.weapon.factory.parts.wpn_fps_lmg_m249_upper_reciever.override = {
@@ -3190,5 +3267,288 @@ tweak_data.weapon.factory.parts.wpn_fps_lmg_m249_upper_reciever.override = {
 				translation = Vector3(0, 3.5, -4.75)
 			}
 		}
+	}	
+}
+
+--	RPK Repositions
+tweak_data.weapon.factory.parts.wpn_fps_lmg_rpk_body_lowerreceiver.adds = {"ak74_unit"}
+tweak_data.weapon.factory.parts.wpn_fps_lmg_rpk_body_lowerreceiver.override = {
+	ak74_unit = {
+		a_obj = "rp_wpn_fps_lmg_rpk"
+	},
+	wpn_fps_upg_fl_ass_laser = {
+		parent = "ak74",
+		override = {
+			wpn_fps_addon_ris = {
+				parent = "ak74"
+			}
+		}
+	},
+	wpn_fps_upg_fl_ass_peq15 = {
+		parent = "ak74",
+		override = {
+			wpn_fps_addon_ris = {
+				parent = "ak74"
+			}
+		}
+	},
+	wpn_fps_upg_fl_ass_smg_sho_peqbox = {
+		parent = "ak74",
+		override = {
+			wpn_fps_addon_ris = {
+				parent = "ak74"
+			}
+		}
+	},
+	wpn_fps_upg_fl_ass_smg_sho_surefire = {
+		parent = "ak74",
+		override = {
+			wpn_fps_addon_ris = {
+				parent = "ak74"
+			}
+		}
+	},
+	wpn_fps_upg_fl_ass_utg = {
+		parent = "ak74",
+		override = {
+			wpn_fps_addon_ris = {
+				parent = "ak74"
+			}
+		}
+	},		
+	wpn_fps_upg_bp_lmg_lionbipod = {
+		adds = { "m249_unit", "wpn_fps_pis_2006m_fl_adapter"},
+		parent = "m249",
+		override = {
+			m249_unit = {
+				a_obj = "rp_wpn_fps_lmg_rpk"
+			},
+			wpn_fps_pis_2006m_fl_adapter = {
+				a_obj = "a_bp",
+				parent = "m249"
+			}
+		}
+	},
+	wpn_fps_upg_o_rx01 = {
+		adds = { "wpn_fps_upg_o_rpk_scopemount" },
+		a_obj = "a_o_sm",
+		parent = "ak74",
+		override = {
+			wpn_fps_upg_o_rpk_scopemount = {
+				stats = {value = 1},
+				parent = "ak74"
+			}
+		},
+		stance_mod = {
+			wpn_fps_lmg_rpk = {
+				translation = Vector3(0, 0, -4.6)
+			}
+		},
+		forbids = {}
+	},
+	wpn_fps_upg_o_specter = {
+		adds = { "wpn_fps_upg_o_rpk_scopemount" },
+		a_obj = "a_o_sm",
+		parent = "ak74",
+		override = {
+			wpn_fps_upg_o_rpk_scopemount = {
+				stats = {value = 1},
+				parent = "ak74"
+			}
+		},
+		stance_mod = {
+			wpn_fps_lmg_rpk = {
+				translation = Vector3(0, 0, -4.6)
+			}
+		},
+		forbids = {}
+	},
+	wpn_fps_upg_o_aimpoint_2 = {
+		adds = { "wpn_fps_upg_o_rpk_scopemount" },
+		a_obj = "a_o_sm",
+		parent = "ak74",
+		override = {
+			wpn_fps_upg_o_rpk_scopemount = {
+				stats = {value = 1},
+				parent = "ak74"
+			}
+		},
+		stance_mod = {
+			wpn_fps_lmg_rpk = {
+				translation = Vector3(0, 0, -4.6)
+			}
+		},
+		forbids = {}
+	},
+	wpn_fps_upg_o_docter = {
+		adds = { "wpn_fps_upg_o_rpk_scopemount" },
+		a_obj = "a_o_sm",
+		parent = "ak74",
+		override = {
+			wpn_fps_upg_o_rpk_scopemount = {
+				stats = {value = 1},
+				parent = "ak74"
+			}
+		},
+		stance_mod = {
+			wpn_fps_lmg_rpk = {
+				translation = Vector3(0, 0, -4.6)
+			}
+		},
+		forbids = {}
+	},
+	wpn_fps_upg_o_eotech = {
+		adds = { "wpn_fps_upg_o_rpk_scopemount" },
+		a_obj = "a_o_sm",
+		parent = "ak74",
+		override = {
+			wpn_fps_upg_o_rpk_scopemount = {
+				stats = {value = 1},
+				parent = "ak74"
+			}
+		},
+		stance_mod = {
+			wpn_fps_lmg_rpk = {
+				translation = Vector3(0, 0, -4.6)
+			}
+		},
+		forbids = {}
+	},
+	wpn_fps_upg_o_t1micro = {
+	adds = { "wpn_fps_upg_o_rpk_scopemount" },
+		a_obj = "a_o_sm",
+		parent = "ak74",
+		override = {
+			wpn_fps_upg_o_rpk_scopemount = {
+				stats = {value = 1},
+				parent = "ak74"
+			}
+		},
+		stance_mod = {
+			wpn_fps_lmg_rpk = {
+				translation = Vector3(0, 0, -4.6)
+			}
+		},
+		forbids = {}
+	},
+	wpn_fps_upg_o_cmore = {
+		adds = { "wpn_fps_upg_o_rpk_scopemount" },
+		a_obj = "a_o_sm",
+		parent = "ak74",
+		override = {
+			wpn_fps_upg_o_rpk_scopemount = {
+				stats = {value = 1},
+				parent = "ak74"
+			}
+		},
+		stance_mod = {
+			wpn_fps_lmg_rpk = {
+				translation = Vector3(0, 0, -4.6)
+			}
+		},
+		forbids = {}
+	},
+	wpn_fps_upg_o_acog = {
+		adds = { "wpn_fps_upg_o_rpk_scopemount" },
+		a_obj = "a_o_sm",
+		parent = "ak74",
+		override = {
+			wpn_fps_upg_o_rpk_scopemount = {
+				stats = {value = 1},
+				parent = "ak74"
+			}
+		},
+		stance_mod = {
+			wpn_fps_lmg_rpk = {
+				translation = Vector3(0, 0, -4.6)
+			}
+		},
+		forbids = {}
+	},
+	wpn_fps_upg_o_cs = {
+		adds = { "wpn_fps_upg_o_rpk_scopemount" },
+		a_obj = "a_o_sm",
+		parent = "ak74",
+		override = {
+			wpn_fps_upg_o_rpk_scopemount = {
+				stats = {value = 1},
+				parent = "ak74"
+			}
+		},
+		stance_mod = {
+			wpn_fps_lmg_rpk = {
+				translation = Vector3(0, 0, -4.6)
+			}
+		},
+		forbids = {}
+	},
+	wpn_fps_upg_o_eotech_xps = {
+		adds = { "wpn_fps_upg_o_rpk_scopemount" },
+		a_obj = "a_o_sm",
+		parent = "ak74",
+		override = {
+			wpn_fps_upg_o_rpk_scopemount = {
+				stats = {value = 1},
+				parent = "ak74"
+			}
+		},
+		stance_mod = {
+			wpn_fps_lmg_rpk = {
+				translation = Vector3(0, 0, -4.6)
+			}
+		},
+		forbids = {}
+	},
+	wpn_fps_upg_o_reflex = {
+		adds = { "wpn_fps_upg_o_rpk_scopemount" },
+		a_obj = "a_o_sm",
+		parent = "ak74",
+		override = {
+			wpn_fps_upg_o_rpk_scopemount = {
+				stats = {value = 1},
+				parent = "ak74"
+			}
+		},
+		stance_mod = {
+			wpn_fps_lmg_rpk = {
+				translation = Vector3(0, 0, -4.6)
+			}
+		},
+		forbids = {}
+	},
+	wpn_fps_upg_o_rx30 = {
+		adds = {"wpn_fps_upg_o_rpk_scopemount" },
+		a_obj = "a_o_sm",
+		parent = "ak74",
+		override = {
+			wpn_fps_upg_o_rpk_scopemount = {
+				stats = {value = 1},
+				parent = "ak74"
+			}
+		},
+		stance_mod = {
+			wpn_fps_lmg_rpk = {
+				translation = Vector3(0, 0, -4.6)
+			}
+		},
+		forbids = {}
+	},
+	wpn_fps_upg_o_aimpoint = {
+		adds = { "wpn_fps_upg_o_rpk_scopemount" },
+		a_obj = "a_o_sm",
+		parent = "ak74",
+		override = {
+
+			wpn_fps_upg_o_rpk_scopemount = {
+				stats = {value = 1},
+				parent = "ak74"
+			}
+		},
+		stance_mod = {
+			wpn_fps_lmg_rpk = {
+				translation = Vector3(0, 0, -4.6)
+			}
+		},
+		forbids = {}
 	}	
 }
